@@ -1,0 +1,265 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*Reset Codes*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Style*/
+
+html, body{
+	position: relative;
+	height: 100%;
+	min-height: 500px;
+	width: 100%;
+	font-size: 13px;
+	font-family: Arial, sans-serif;
+	background: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+a:visited{
+	color: #000;
+}
+
+em{
+	color: #C70024;
+}
+
+ul {
+	position: absolute;
+	margin: 16px;
+	list-style: none;
+}
+
+.right_list{
+	position: absolute;
+	right: 0;
+}
+
+.left_list{
+	position: absolute;
+	left: 0;
+}
+
+/* HEADER */
+header{
+	position: relative;
+	height: 15px;
+	width:100%;
+}
+
+.nav_list{
+	right: 10px;
+}
+
+.navigation, .apps_icon, .primary_button {
+	position: relative;
+	display: inline;
+	margin: 0 4px;
+	padding: 0 3px;
+}
+
+.apps_icon{
+	bottom: -5px;
+	right: 7px;
+	margin: 0 3px;
+}
+
+.navigation{
+	right: 13px;
+	margin: 0 2px;
+}
+
+.primary_button{
+	border-radius: 2px;
+	color: white;
+    padding: 7px 13px 8px 13px;
+    font-weight: bolder;
+    background: #4C8CF5;
+    background: -moz-linear-gradient(top,  #4C8CF5 0%, #4786ED 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4C8CF5), color-stop(100%,#4786ED));
+    background: -webkit-linear-gradient(top,  #4C8CF5 0%,#4786ED 100%);
+    background: -o-linear-gradient(top,  #4C8CF5 0%,#4786ED 100%);
+    background: -ms-linear-gradient(top,  #4C8CF5 0%,#4786ED 100%);
+    background: linear-gradient(top,  #4C8CF5 0%,#4786ED 100%);
+}
+
+.primary_button:hover{
+	box-shadow: 0 1px 1px 1px #CCC;
+}
+
+.primary_button:active{
+	box-shadow: inset 0 1px 1px #152540;
+	background: #4E87E6;
+}
+
+
+/* MAIN */
+.main_content{
+	position: relative;
+	width: 700px;
+	margin: 178px auto;
+	text-align: center;
+}
+
+.logo{
+	position: relative;
+	width: 285px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.logo img{
+	width:270px;
+	height: auto;
+}
+
+.geo_indicator{
+	position: absolute;
+	font-size: 16px;
+	font-weight: bold;
+	color: grey;
+	letter-spacing: 2%;
+	right: 0;
+	bottom: 10px;
+}
+
+.keyword_search{
+	display: block;
+	margin: 15px auto;
+	width: 550px;
+	height: 8px;
+	border: solid 1px #dadada;
+	padding: 10px;
+	font-size: 15px;
+	background-image: url(mic.gif);
+	background-repeat: no-repeat;
+	background-position: 548px 4px;
+	background-size: 14px auto;
+}
+
+.keyword_search:focus{
+	outline: none;
+	border: solid 1px #4059FF;
+}
+
+.input_button{
+	margin: 0 5px 43px 5px;
+	border: solid 1px #dadada;
+	border-radius: 2px;
+	background: #f4f4f4;
+    background: -moz-linear-gradient(top,  #f4f4f4 0%, #f1f1f1 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4f4f4), color-stop(100%,#f1f1f1));
+    background: -webkit-linear-gradient(top,  #f4f4f4 0%,#f1f1f1 100%); 
+    background: -o-linear-gradient(top,  #f4f4f4 0%,#f1f1f1 100%); 
+    background: -ms-linear-gradient(top,  #f4f4f4 0%,#f1f1f1 100%); 
+    background: linear-gradient(top,  #f4f4f4 0%,#f1f1f1 100%); 
+    color: #444;
+    padding: 7px 8px;
+    font-weight: bolder;
+    font-family: arial, sans-serif;
+}
+
+.input_button:hover{
+	border: solid 1px #CCC;
+	box-shadow: 0 1px 1px 0 #DEDEDE;
+}
+
+
+/* FOOTER */
+
+footer{
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	background: #f4f4f4;
+	bottom: 0;
+	border-top: 1px solid #E0E0E0;
+}
+
+.business, .legal{
+	position: relative;
+	display: inline;
+	margin: 0 14px;
+	bottom: 3px;
+}
+
+.business a, .legal a{
+	color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
