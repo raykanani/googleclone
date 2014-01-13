@@ -185,10 +185,6 @@ header{
 	border: solid 1px #dadada;
 	padding: 10px;
 	font-size: 15px;
-	background-image: url(mic.gif);
-	background-repeat: no-repeat;
-	background-position: 548px 4px;
-	background-size: 14px auto;
 }
 
 .keyword_search:hover{
@@ -199,6 +195,17 @@ header{
 	outline: none;
 	border: solid 1px #4059FF;
 }
+
+.mic_image{
+	position: absolute;
+	width: 14px;
+	height: auto;
+	right: 72px;
+	bottom: 104px;
+	opacity: 0.6;
+}
+
+
 
 .input_button{
 	margin: 0 5px 43px 5px;
